@@ -1,0 +1,7 @@
+%h1 Subcategory
+
+
+- if @subcategories.present?
+	%ul
+		- @subcategories.each do |s|
+			%li= link_to s.name, subcategory_path(s) 
