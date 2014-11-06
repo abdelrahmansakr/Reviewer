@@ -5306,3 +5306,128 @@ Processing by SubcategoriesController#show as HTML
   [1m[36mSubcategory Load (0.3ms)[0m  [1mSELECT  `subcategories`.* FROM `subcategories`  WHERE `subcategories`.`id` = 2 LIMIT 1[0m
   Rendered subcategories/show.html.haml within layouts/application (0.2ms)
 Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 13:10:08 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/abdelrahmansakr/.rvm/gems/ruby-2.1.3/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 19ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-11-06 13:10:17 +0200
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (42.7ms)[0m  SELECT `categories`.* FROM `categories`
+  Rendered categories/index.html.haml within layouts/application (55.8ms)
+Completed 200 OK in 192ms (Views: 147.2ms | ActiveRecord: 42.7ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/subcategories.css?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/subcategories.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:18 +0200
+
+
+Started GET "/subcategories?cname=food" for 127.0.0.1 at 2014-11-06 13:10:20 +0200
+Processing by SubcategoriesController#index as HTML
+  Parameters: {"cname"=>"food"}
+  [1m[36mSubcategory Load (8.6ms)[0m  [1mSELECT `subcategories`.* FROM `subcategories`  WHERE (category_name = 'food')[0m
+  Rendered subcategories/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 93ms (Views: 83.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/subcategories/1" for 127.0.0.1 at 2014-11-06 13:10:21 +0200
+Processing by SubcategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubcategory Load (2.3ms)[0m  SELECT  `subcategories`.* FROM `subcategories`  WHERE `subcategories`.`id` = 1 LIMIT 1
+  Rendered subcategories/show.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 92ms (Views: 87.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  Rendered categories/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/subcategories.css?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/subcategories.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 13:10:25 +0200
+
+
+Started GET "/subcategories?cname=books" for 127.0.0.1 at 2014-11-06 13:10:27 +0200
+Processing by SubcategoriesController#index as HTML
+  Parameters: {"cname"=>"books"}
+  [1m[35mSubcategory Load (0.4ms)[0m  SELECT `subcategories`.* FROM `subcategories`  WHERE (category_name = 'books')
+  Rendered subcategories/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subcategories/2" for 127.0.0.1 at 2014-11-06 13:10:28 +0200
+Processing by SubcategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSubcategory Load (0.4ms)[0m  [1mSELECT  `subcategories`.* FROM `subcategories`  WHERE `subcategories`.`id` = 2 LIMIT 1[0m
+  Rendered subcategories/show.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (3.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMoreDetailsAboutSubcategories (20141106111215)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMoreDetailsAboutSubcategories (20141106111215)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddMoreColumnsToSubcategories (20141106130438)
+  [1m[35m (67.0ms)[0m  ALTER TABLE `subcategories` ADD `image` blob
+  [1m[36m (24.5ms)[0m  [1mALTER TABLE `subcategories` ADD `location` varchar(255)[0m
+  [1m[35m (19.7ms)[0m  ALTER TABLE `subcategories` ADD `address` varchar(255)
+  [1m[36m (18.2ms)[0m  [1mALTER TABLE `subcategories` ADD `telephone_number` varchar(255)[0m
+  [1m[35m (23.6ms)[0m  ALTER TABLE `subcategories` ADD `type` varchar(255)
+  [1m[36m (15.9ms)[0m  [1mALTER TABLE `subcategories` ADD `rating_1` int(11)[0m
+  [1m[35m (21.6ms)[0m  ALTER TABLE `subcategories` ADD `rating_2` int(11)
+  [1m[36m (18.6ms)[0m  [1mALTER TABLE `subcategories` ADD `rating_3` int(11)[0m
+  [1m[35m (20.4ms)[0m  ALTER TABLE `subcategories` ADD `number_of_ratings` int(11)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141106130438')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
